@@ -1,11 +1,12 @@
 ## Start en stop Hue bij Windows aan- en uitzetten
-In deze repository vind je een script dat je Philips Hue lampen en start stekker automatisch aan- en uitzet zodra jij je aan- en afmeldt op je Windows compoter. 
+In deze repository vind je een script dat je Philips Hue lampen en start stekkers automatisch aan- en uitzet zodra jij je aan- en afmeldt op je Windows compoter. 
 
 ## Installatie
 Voer de volgende stappen uit om het script in te richten.
 
 <h4>Python voorbereiden</h4>
 Installeer Python op je computer (bv. Chocolately > choco install python). Open CMD op je computer en voer het onderstaande command uit.
+
 ```
 pip install phue
 ```
@@ -20,10 +21,12 @@ Kopieer het bestand hue_start.sh naar de onderstaande map:
 ```
 
 Vervang de inhoud in het bestand met de locatie van Python; bijvoorbeeld:
+
 ``` 
 @echo off
 "C:\Program Files (x86)\Python37-32\python.exe" "C:\Program Dev\Apps\Python.HueSync\hue_start.sh"
 ```
+
 Vanaf nu zal dit bestand iedere keer worden aangeroepen zodra je Windows aanzet. Het gevolg is dat de Python Hue Client een lokaal verzoek stuurt naar je Hue Bridge om de lampen uit het bestand hue_start.py in te schakelen.
 
 <h4>Logoff toevoegen aan Windows</h4>

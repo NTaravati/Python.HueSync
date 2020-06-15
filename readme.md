@@ -16,6 +16,7 @@ Druk op de fysieke Hue Bridge knop en open daarna hue_start.py. Hiermee koppel j
 
 <h4>Startup toevoegen aan Windows</h4>
 Kopieer het bestand hue_start.sh naar de onderstaande map:
+
 ```
 %AppData%\Microsoft\Windows\Start Menu\Programs\Startup
 ```
